@@ -154,7 +154,6 @@ pub contract TopShot: NonFungibleToken {
             self.playID = playID
             self.serialNumber = serialNumber
         }
-
     }
 
     pub resource NFT: NonFungibleToken.INFT {
