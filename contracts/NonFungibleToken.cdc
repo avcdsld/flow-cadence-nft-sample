@@ -21,7 +21,7 @@ pub contract interface NonFungibleToken {
     }
 
     pub resource interface Receiver {
-		pub fun deposit(token: @NFT)
+        pub fun deposit(token: @NFT)
     }
 
     pub resource interface CollectionPublic {
