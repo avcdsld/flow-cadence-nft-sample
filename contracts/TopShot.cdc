@@ -1,3 +1,5 @@
+// https://github.com/dapperlabs/nba-smart-contracts/blob/master/contracts/TopShot.cdc
+
 import NonFungibleToken from 0xNFTADDRESS
 
 pub contract TopShot: NonFungibleToken {

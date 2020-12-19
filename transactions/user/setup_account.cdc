@@ -2,7 +2,7 @@
 // Sender: Any account
 
 import TopShot from 0xTOPSHOTADDRESS
-import TopShotLimitedMinter from 0xTOPSHOTLIMITEDMINERADDRESS
+import TopShotLimitedMinter from 0xTOPSHOTLIMITEDMINTERADDRESS
 
 transaction() {
     prepare(acct: AuthAccount) {
@@ -12,7 +12,7 @@ transaction() {
             // Create empty collection
             let collection <- TopShot.createEmptyCollection() as! @TopShot.Collection
 
-            // Store to the acount storage
+            // Store the collection to the acount storage
             acct.save(<-collection, to: /storage/MomentCollection)
 
             // Create a public referrence of the collection

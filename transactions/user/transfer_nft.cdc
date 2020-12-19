@@ -5,8 +5,8 @@ import NonFungibleToken, TopShot from 0xTOPSHOTADDRESS
 
 transaction() {
     prepare(acct: AuthAccount) {
-        let withdrawID: UInt64 = UInt64(1)
-        let recipient: Address = 0x03
+        let withdrawID: UInt64 = UInt64(1) // TODO: Change token id
+        let recipient: Address = 0x03 // TODO: Change address
 
         let collectionRef = acct.borrow<&TopShot.Collection>(from: /storage/MomentCollection)
             ?? panic("Could not borrow a reference to the stored Moment collection")

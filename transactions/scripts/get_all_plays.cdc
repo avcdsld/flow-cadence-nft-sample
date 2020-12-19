@@ -1,5 +1,4 @@
-// This script returns an array of all the plays 
-// that have ever been created for Top Shot
+// Script to get an array of all the plays that have ever been created for Top Shot
 
 import TopShot from 0xTOPSHOTADDRESS
 

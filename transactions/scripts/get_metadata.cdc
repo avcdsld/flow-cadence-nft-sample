@@ -3,8 +3,8 @@
 import TopShot from 0x01
 
 pub fun main(): {String: String} {
-    let account: Address = 0x01
-    let id: UInt64 = UInt64(1)
+    let account: Address = 0x01 // TODO: Change address
+    let id: UInt64 = UInt64(1) // TODO: Change token id
 
     let collectionRef = getAccount(account).getCapability(/public/MomentCollection)!
         .borrow<&{TopShot.MomentCollectionPublic}>()

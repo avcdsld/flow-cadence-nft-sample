@@ -1,9 +1,8 @@
 // Transaction to mint and receive a new NFT
 // Sender: Any account
 
-
 import TopShot from 0xTOPSHOTADDRESS
-import TopShotLimitedMinter from 0xTOPSHOTLIMITEDMINERADDRESS
+import TopShotLimitedMinter from 0xTOPSHOTLIMITEDMINTERADDRESS
 
 transaction() {
     prepare(acct: AuthAccount) {
