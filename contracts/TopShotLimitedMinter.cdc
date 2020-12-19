@@ -34,7 +34,7 @@ pub contract TopShotLimitedMinter {
     }
 
     pub fun removeMinter(minterName: String, proofOfAdmin: @TopShot.Admin): @TopShot.Admin {
-        // admin リソースを持っている人であれば minter を削除できる
+        // If you have admin resource object, you can remove the minter
         let minter <- self.minter.remove(key: minterName) ?? panic("missing Minter")
         destroy minter
         return <- proofOfAdmin
