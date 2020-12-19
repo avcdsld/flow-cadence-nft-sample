@@ -41,9 +41,9 @@ pub contract TopShotLimitedMinter {
     }
 
     pub fun mintMoment(minterName: String): @TopShot.NFT {
-      let minter <- self.minter.remove(key: minterName) ?? panic("missing Minter")
-      let moment <- minter.mintMoment()
-      self.minter[minterName] <-! minter
-      return <- moment
+        let minter <- self.minter.remove(key: minterName) ?? panic("missing Minter")
+        let moment <- minter.mintMoment()
+        self.minter[minterName] <-! minter
+        return <- moment
     }
 }
